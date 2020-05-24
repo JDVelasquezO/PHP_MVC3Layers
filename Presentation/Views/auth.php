@@ -1,7 +1,7 @@
 
 <?php include_once "layouts/header.php"?>
 <?php include_once "layouts/main.php"?>
-    <h1>Login</h1>
+    <h1 class="is-size-3">Login</h1>
     <form action="../Controller/AuthController.php" method="post">
         <div class="field">
             <div class="control">

@@ -49,6 +49,8 @@ class User_DataAccess
         $userArray = $response->fetch_assoc();
         $this->user->setNameUser($userArray['name_client']);
         $this->user->setEmail($userArray['email']);
+
+        $this->conn->close();
         return $this->user;
     }
 }

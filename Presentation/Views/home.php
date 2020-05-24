@@ -1,8 +1,9 @@
 <?php
 
     require_once "../Controller/HomeController.php";
+    session_start();
 
-    $id = $_GET['idUser'];
+    $id = $_SESSION['user'];
     $user = getUserById($id);
     $name = $user->getNameUser();
 
