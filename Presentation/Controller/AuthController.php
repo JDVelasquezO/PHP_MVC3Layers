@@ -8,7 +8,7 @@
     $result = $userLogic->AuthUser($email, $pass);
 
     if ($result === 'false'){
-        echo "Los datos son incorrectos, intenta de nuevo";
+        header("location: ../Views/errors/errorData.php");
     } else {
         $id = $result->getIdUser();
         session_start();
